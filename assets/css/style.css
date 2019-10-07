@@ -77,9 +77,14 @@ body {
     clear: both;
 }
 
-.me, #bio {
+.me {
     padding-left: 50px;
     padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#bio {
+    padding-left: 50px;
     padding-bottom: 15px;
 }
 
@@ -102,15 +107,22 @@ p {
     margin: auto;
     background: #ffffff;
     border-color: #000000;
-    overflow: auto;
-    clear: both;
+    align-items: center;
+    
 }
 
-.gallery1, .gallery2, .gallery3, .gallery4 {
+.gallery1, .gallery2 {
     margin: auto;
     float: left;
-    padding-left: 50px;
-    text-align: center;
+    padding-left: 73px;
+    position: relative;
+}
+
+.gallery3, .gallery4 {
+    margin: auto;
+    float: left;
+    padding-left: 73px;
+    position: relative;
 }
 
 .containerContact{
@@ -174,4 +186,15 @@ input[type=submit]:hover {
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 15px;
+}
+
+.center1, .center2, .center3, .center4 {
+    position: absolute;
+    bottom: 20px;
+    left: 78px;
+    background-color: #4aaaac;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
 }

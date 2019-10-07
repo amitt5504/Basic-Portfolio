@@ -3,6 +3,7 @@
     height: 85px;
     background-attachment: fixed;
     margin: auto;
+    clear: both;
 }
 
 .head {
@@ -20,7 +21,7 @@
     margin: auto;
     text-align: center;
     font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     background-color: #4aaaa5;
     width: 300px;
@@ -30,11 +31,11 @@
 
 .menu {
     float: right;
-    margin-top: 3.5%;
+    margin-top: 18px;
 }
 
 .topnav a {
-    height: 75px;
+    height: 85px;
     align-content: right;
     color: #777777;
     text-align: center;
@@ -43,19 +44,30 @@
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 15px;
-    margin-bottom: 15px;
-    border-right: 1px solid #000000;
+    margin-bottom: 15px; 
+    
 }
 
-.topnav a:last-child {
-    border-right: none;
+.topnav #list {
+    display: inline;
+    border-right: 1px solid #777777;
 }
+
+.topnav #list:nth-child(3) {
+    border-right: 0;
+}
+
+#navbar li:nth-child(3){
+    border-right:0;
+    }
 
 body {
-    background: #cccccc;
+    background-color: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1;
 }
 
-.container {
+.containerIndex {
     width: 960px;
     height: 350px;
     margin: auto;
@@ -65,10 +77,18 @@ body {
     clear: both;
 }
 
-.me {
+.me, #bio {
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 15px;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+p {
+    width: 95%;
 }
 
 #image {
@@ -76,13 +96,82 @@ body {
     padding-right: 10px;
 }
 
+.containerPort {
+    width: 960px;
+    height: 350px;
+    margin: auto;
+    background: #ffffff;
+    border-color: #000000;
+    overflow: auto;
+    clear: both;
+}
+
+.gallery1, .gallery2, .gallery3, .gallery4 {
+    margin: auto;
+    float: left;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.containerContact{
+    width: 960px;
+    height: 375px;
+    margin: auto;
+    background: #ffffff;
+    border-color: #000000;
+    clear: both;
+    overflow: auto;
+    
+}
+
+#hr {
+    width: 90%;
+    align-items: center;
+    margin-top: -10px;
+}
 
 footer {
     clear: both;
-    height: 35px;
-    background: #666666;
-    padding: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: #666666;
+    margin-bottom: -1px;
     text-align: center;
-    border-top: solid 5px #4aaaa5;
-  }
+    border-top: solid 8px #4aaaa5;
+    padding-bottom: 25px;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 92%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    
+}
+  
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaac;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #cccccc;
+}
+  
+#form {
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}

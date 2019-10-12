@@ -1,11 +1,19 @@
+body {
+    background-color: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1;
+    margin: 0;
+}
+/* This class is for the header */
 .top {
     background-color: #ffffff;
     height: 85px;
     background-attachment: fixed;
     margin: auto;
     clear: both;
+    width: 100%;
 }
-
+/* This class is for creating a section in the header of the 960px content width */
 .head {
     width: 960px;
     height: 85px;
@@ -14,8 +22,9 @@
     background-color: #ffffff;
     background-attachment: fixed;
     clear: both;
-} 
+}
 
+/* Styling for the name and background of the element */
 #name {
     float: left;
     margin: auto;
@@ -28,7 +37,7 @@
     height: 85px;
     line-height: 45px;
 }
-
+/* The following are for styling the navigation menu. */
 .menu {
     float: right;
     margin-top: 18px;
@@ -44,8 +53,8 @@
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 15px;
-    margin-bottom: 15px; 
-    
+    margin-bottom: 15px;
+
 }
 
 .topnav #list {
@@ -57,19 +66,20 @@
     border-right: 0;
 }
 
-#navbar li:nth-child(3){
-    border-right:0;
-    }
-
-body {
-    background-color: #cccccc;
-    font-family: Arial, Helvetica, sans-serif;
-    flex-grow: 1;
+#navbar li:nth-child(3) {
+    border-right: 0;
 }
 
+/* The horizonatal line within each container */
+#hr {
+    width: 90%;
+    align-items: center;
+    margin-top: -10px;
+}
+/* The container for the about me bio */
 .containerIndex {
     width: 960px;
-    height: 350px;
+    height: 450px;
     margin: auto;
     background: #ffffff;
     border-color: #000000;
@@ -100,50 +110,101 @@ p {
     float: left;
     padding-right: 10px;
 }
-
+/* The container for the portfolio */
 .containerPort {
     width: 960px;
-    height: 350px;
+    height: 550px;
     margin: auto;
     background: #ffffff;
     border-color: #000000;
-    align-items: center;
-    
+    overflow: auto;
+    clear: both;
+}
+/* Styling for the gallery items */
+.gallery1,
+.gallery2 {
+    margin-left: auto;
+    margin-bottom: 20px;
+    float: left;
+    padding-left: 47px;
+    padding-right: 50px;
+    position: relative;
+
 }
 
-.gallery1, .gallery2 {
-    margin: auto;
+.gallery3,
+.gallery4 {
+    margin-left: auto;
+    margin-bottom: 20px;
     float: left;
-    padding-left: 73px;
+    padding-left: 47px;
+    padding-right: 50px;
     position: relative;
 }
-
-.gallery3, .gallery4 {
-    margin: auto;
-    float: left;
-    padding-left: 73px;
-    position: relative;
+/* This is for the text to display over the gallery image */
+.center1,
+.center2,
+.center3,
+.center4 {
+    position: absolute;
+    bottom: 40px;
+    background-color: #4aaaac;
+    color: white;
+    padding-top: 20px;
+    align-content: center;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    font-size: 24px;
 }
 
-.containerContact{
+/* The container for the contact page */
+.containerContact {
     width: 960px;
-    height: 375px;
+    height: 450px;
     margin: auto;
     background: #ffffff;
     border-color: #000000;
     clear: both;
     overflow: auto;
-    
+
 }
 
-#hr {
-    width: 90%;
-    align-items: center;
-    margin-top: -10px;
+/* Styling for the form fields */
+input[type=text],
+select,
+textarea {
+    width: 92%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
 }
 
+input[type=submit] {
+    background-color: #4aaaac;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #cccccc;
+}
+
+#form {
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* To create the sticky footer */
 footer {
-    clear: both;
+
     width: 100%;
     height: 20px;
     background-color: #666666;
@@ -154,47 +215,5 @@ footer {
     left: 0;
     bottom: 0;
     position: fixed;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 92%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    
-}
-  
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4aaaac;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-  
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #cccccc;
-}
-  
-#form {
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-}
-
-.center1, .center2, .center3, .center4 {
-    position: absolute;
-    bottom: 20px;
-    left: 78px;
-    background-color: #4aaaac;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    align-content: center;
 }
